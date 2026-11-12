@@ -1,0 +1,217 @@
+---
+import Layout from '../layouts/layout.astro';
+---
+
+<Layout title="Singbaobao">
+    <!-- Main Content Area -->
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section id="hero" class="card">
+            <div class="hero-content">
+                <h2>System & Risk </h2>
+                <p class="text-center mb-6 text-gray-700">
+                    A <strong>passion project</strong> worth playing around with?<br/>
+                </p>
+                <h4>Link ideas to the world. Get In Touch.</h4>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-envelope-open-text text-2xl text-amber-900"></i>
+                    <div>
+                        <a href="mailto:kohbhd@beetlskills.com" class="font-bold text-green-900 underline">kohbhd@beetlskills.com</a>
+                    </div>
+                </div>
+
+                <!-- Trigger Button -->
+                <button id="wa-open-btn" class="cta-button">Message on WhatsApp</button>
+
+                <!-- Contact Modal Box -->
+                <div id="wa-modal" class="modal-overlay hidden">
+                    <div class="modal-card">
+                        <h3>Send a WhatsApp Message</h3>
+                        <p>Type your inquiry below. Clicking send will open WhatsApp with your pre-filled text.</p>
+
+                        <!-- Honeypot field -->
+                        <input type="text" id="hp-field" style="display:none;" tabindex="-1" autocomplete="off" />
+
+                        <textarea id="wa-input" rows="4" placeholder="Describe your project, proof of concept, or inquiry..."></textarea>
+                        
+                        <div id="wa-error" class="error-msg"></div>
+
+                        <div class="modal-actions">
+                            <button id="wa-cancel-btn" class="cancel-button">Cancel</button>
+                            <button id="wa-send-btn" class="cta-button">Launch WhatsApp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-image-container">
+                <img src="/bee-ko-profile.png" alt="Koh Bee Hock Professional Avatar" class="profile-image">
+            </div>
+        </section>
+
+        <!-- Subdomain Ecosystem Portal Grid -->
+        <section id="projects" class="card" style="border-left-color: var(--color-primary);">
+            <h3 class="section-title">Current Work</h3>
+            <div class="portal-grid">
+                
+                <div class="portal-card">
+                    <div>
+                        <span class="portal-badge">Ask AI</span>
+                        <h4><i class="fa-solid fa-notes-medical text-green-800"></i> TCM Assistant</h4>
+                        <p>AI-driven Traditional Chinese Medicine diagnostic tool combining tongue analysis and recommendations.</p>
+                    </div>
+                    <a href="https://tcm.singbaobao.com" target="_blank" rel="noopener noreferrer" class="portal-link">
+                        tcm.singbaobao.com <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="portal-card secondary-accent">
+                    <div>
+                        <span class="portal-badge" style="background: rgba(107, 66, 38, 0.1); color: var(--color-secondary);">In the Mind</span>
+                        <h4><i class="fa-solid fa-chess text-amber-900"></i> Game of Life</h4>
+                        <p>A playful, interactive card deck and strategy wiki that reframes daily stress, organizational dynamics, and personal choices into manageable, low-friction game moves.</p>
+                    </div>
+                    <a href="https://adapt.singbaobao.com" target="_blank" rel="noopener noreferrer" class="portal-link" style="color: var(--color-secondary);">
+                        adapt.singbaobao.com <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="portal-card">
+                    <div>
+                        <span class="portal-badge">Keeping Track</span>
+                        <h4><i class="fa-solid fa-book-open text-green-800"></i> Tsundoku Made Easy</h4>
+                        <p>Capture, categorize and store book titles on an online book list with barcode and optical recognition.</p>
+                    </div>
+                    <a href="https://barcode.singbaobao.com" target="_blank" rel="noopener noreferrer" class="portal-link">
+                        barcode.singbaobao.com <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="portal-card secondary-accent">
+                    <div>
+                        <span class="portal-badge" style="background: rgba(107, 66, 38, 0.1); color: var(--color-secondary);">Social Media</span>
+                        <h4><i class="fa-solid fa-music text-amber-900"></i> Words that Sing</h4>
+                        <p>An ongoing experiment at the intersection of lyric writing, AI music creation, and digital marketing.</p>
+                    </div>    
+                    <a href="https://songs.singbaobao.com" target="_blank" rel="noopener noreferrer" class="portal-link" style="color: var(--color-secondary);">
+                        songs.singbaobao.com <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="portal-card">
+                    <div>
+                        <span class="portal-badge">Ask AI</span>
+                        <h4><i class="fa-solid fa-notes-medical text-green-800"></i> Mark & Link </h4>
+                        <p>A content management system that uses markdown for content creation and wiki-links for dynamic reading.</p>
+                    </div>
+                    <a href="https://cms.singbaobao.com" target="_blank" rel="noopener noreferrer" class="portal-link">
+                        cms.singbaobao.com <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="portal-card">
+                    <div>
+                        <span class="portal-badge">Just a game</span>
+                        <h4><i class="fa-solid fa-gamepad text-green-800"></i> Pinball </h4>
+                        <p>A simple game. Just sign in and try it out. Best played on desktop.</p>
+                    </div>
+                    <a href="https://pinball.singbaobao.com" target="_blank" rel="noopener noreferrer" class="portal-link">
+                        pinball.singbaobao.com <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>                
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="card">                       
+            <div class="section-title">About Me</div>
+            <p class="mb-4 text-justify">
+                I am an independent agent dedicated to elegance, wellness, and precision. I combine pedagogical methodology with engineering discipline to reduce friction in work and life.
+                My core interest is in building mobile-friendly AI solutions.
+            </p>
+            <br/>
+            <div class="service-details mt-4">
+                <div class="service-block">
+                    <h4><i class="fa-solid fa-microchip"></i> System Orchestrator</h4>
+                    <p>I don't see just the pieces. I distill complex, cutting-edge concepts into reasonable solutions.</p>
+                </div>
+                <div class="service-block">
+                    <h4><i class="fa-solid fa-chart-line"></i> Risk Strategist</h4>
+                    <p>I proactively eliminate project blind spots to ensure customer value prior to high-stake building.</p>
+                </div>
+            </div>
+            <br/>           
+            <div class="service-details">
+                <div class="service-block">
+                    <h4><i class="fa-solid fa-graduation-cap"></i> Educational Content</h4>
+                    <p>
+                        I share my interest and knowledge by developing specialized content on smart connected systems, cloud computing, perceptive AI, and data analytics.
+                    </p>
+                </div>
+                
+                <div class="service-block">
+                    <h4><i class="fa-solid fa-shield-halved"></i> Just Passion </h4>
+                    <p>
+                        I am most at ease when working on pre-research work on interesting ideas to build a solid foundation for future developments.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>
+
+<script>
+    const PHONE_NUMBER = "6597608476";
+    
+    const openBtn = document.getElementById("wa-open-btn");
+    const cancelBtn = document.getElementById("wa-cancel-btn");
+    const sendBtn = document.getElementById("wa-send-btn");
+    const modal = document.getElementById("wa-modal");
+    const textarea = document.getElementById("wa-input") as HTMLTextAreaElement;
+    const hpInput = document.getElementById("hp-field") as HTMLInputElement;
+    const errorDiv = document.getElementById("wa-error");
+
+    openBtn?.addEventListener("click", () => modal?.classList.remove("hidden"));
+    cancelBtn?.addEventListener("click", () => {
+        modal?.classList.add("hidden");
+        if (errorDiv) errorDiv.textContent = "";
+    });
+
+    sendBtn?.addEventListener("click", () => {
+        const text = textarea.value.trim();
+
+        if (hpInput && hpInput.value !== "") {
+            console.warn("Bot detected via honeypot.");
+            modal?.classList.add("hidden");
+            return;
+        }
+
+        if (!text) {
+            if (errorDiv) errorDiv.textContent = "Please enter a message before sending.";
+            return;
+        }
+        if (text.length > 500) {
+            if (errorDiv) errorDiv.textContent = "Message is too long (max 500 characters).";
+            return;
+        }
+
+        const lastSent = localStorage.getItem("wa_last_sent");
+        const now = Date.now();
+        const cooldownMs = 30000;
+
+        if (lastSent && now - parseInt(lastSent, 10) < cooldownMs) {
+            const waitSecs = Math.ceil((cooldownMs - (now - parseInt(lastSent, 10))) / 1000);
+            if (errorDiv) errorDiv.textContent = `Please wait ${waitSecs} seconds before opening WhatsApp again.`;
+            return;
+        }
+
+        localStorage.setItem("wa_last_sent", now.toString());
+        const url = `https://api.whatsapp.com/send?phone=${PHONE_NUMBER}&text=${encodeURIComponent(text)}`;
+        window.open(url, "_blank");
+
+        modal?.classList.add("hidden");
+        textarea.value = "";
+        if (errorDiv) errorDiv.textContent = "";
+    });
+</script>
